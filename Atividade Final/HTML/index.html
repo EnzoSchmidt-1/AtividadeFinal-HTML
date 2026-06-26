@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="ASSETS/icone.png">
+
+    <script src="JS/script.js"></script>
+
+    <title>Portfolio|DEV</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">&lt; E S /&gt;</div>
+        <nav>
+            <ul>
+                <li><a href="#Introdução">Introdução</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Introdução" class="sobre">
+            <div class="sobre-conteudo">
+                <h1 class="nome">Enzo Schmidt</h1>
+                <h2>
+                    Estudante de ciencia da computação da UniFil
+                    Foco em Full Stack / Front-end / Back-end
+                </h2>
+                <p>Busco aprender e melhorar mais a cada dia</p>
+                <a href="#projetos" class="botão">Ver Meus Projetos</a>
+            </div>
+
+            <div class="sobre-imagem">
+                <img src="ASSETS/Foto.jpeg" alt="Minha foto">
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="carreira">
+                <p>
+                    Eu sou um estudante da instituição de ensino UniFil uma faculadade
+                    com grande respeito e reputação pela fromação de otimos alunos,
+                    ainda mais no quesito tecnologico, Tenho grande interrese em aprender mais 
+                    sobre programação em varios setores
+                </p>
+                
+                <p class="PS">
+                    Não tem nada haver mas eu tambem sou apaixonado
+                    por todos os tipos de musica existentes
+                </p>
+
+                <h3>Capacidades Tecnicas:</h3>
+                <ul class="lista">
+                    <li>Java</li>
+                    <li>JavaScript / HTML & CSS</li>
+                    <li>SQL & Banco de dados</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <button onclick="carinha()" class="botão" id="id_cara">Me Click</button>
+        </section>
+        
+        <script> 
+            function carinha(){
+                let cara = ";)" 
+                document.getElementById("id_cara").innerHTML = cara
+            }
+        </script>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados, Enzo Schmidt Pastore, 2026.</p>
+    </footer>
+</body>
+
+</html>
